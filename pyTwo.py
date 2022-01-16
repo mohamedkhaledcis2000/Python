@@ -87,3 +87,38 @@ myArr = ['mohamed','khaled','love','python']
 print(' '.join(myArr))
 
 
+#########control flow##########
+# if elif else
+def check(x):
+    if(x>1):
+        print("Greater than")
+    elif(x<1):
+        print("Lower Than")
+    else:
+        print("equal one")
+
+check(1)
+check(2)
+check(-1)
+
+# loopin for
+languges = ["C#","Python","Php","Javascript"]
+for i in languges:
+    print("I Love "+i+" Programming Language")
+
+# for with range 
+for num in range(10):
+    print(num)
+
+
+# While
+days = ["Sat","Sun","Mon","tues","Win","thur","Fri"]
+dayCount=0
+while dayCount<len(days):
+    print(days[dayCount])
+    dayCount+=1
+
+
+# Prompt
+name = input("Enter Your Name")
+print("My Name is "+name)
