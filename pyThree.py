@@ -50,6 +50,23 @@ print(myDictionary.items())
 newDict= {"faculty":"FCIS","Department":"Information System"}
 print(myDictionary.update(newDict))
 print(myDictionary)
-##################################
 
+#############Functions#####################
+def temp():
+    return 'temp'
 
+print(temp())
+
+def myAge(a):
+    return 'my age is '+a
+
+print(myAge('mohamed khaled'))
+
+def sum(*args):
+    sum = 0
+    for i in args:
+        sum+=1
+    print(sum)
+
+sum(1,2,4,5)  # it print 4
+    
