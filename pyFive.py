@@ -21,3 +21,69 @@ print(id(student1),id(student2))
 print(student1.name,student2.name)
 print(student1.age,student2.age)
 print(student1.courses,student2.courses)
+
+############inheritance#################
+
+# parent class
+class Person(object):
+
+    # constructor
+    def __init__(self,name):
+        self.name = name
+
+    # to get name
+    def getName(self):
+        return self.name
+
+    def isEmployee(self):
+        return False
+
+
+# child class
+class Employee(Person):
+
+    def isEmployee(self):
+        return True 
+
+emp = Person("Mohamed")
+print(emp.getName(),emp.isEmployee())
+
+emp = Employee("Abdelaziz")
+print(emp.getName(),emp.isEmployee())
+
+########polymorphism#############
+# it means haveing many forms for the same function
+
+class Egypt():
+
+    def Capital(self):
+        print('Cairo Is The Capital Of Egypt')
+
+    def Language(self):
+        print("Arabic is the language of egypt")
+
+    def Type(self):
+        print("Egypt is developed country")
+
+
+class Terkiya():
+    
+    def Capital(self):
+        print('Ankara Is The Capital Of Terkiya')
+
+    def Language(self):
+        print("Terkish is the language of Terkishya")
+
+    def Type(self):
+        print("Terkiya is developed countryya")
+
+
+
+obj_Egy = Egypt()
+obj_Ter=Terkiya()
+
+for country in(obj_Egy,obj_Ter):
+    country.Capital()
+    country.Language()
+    country.Type()
+
