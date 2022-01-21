@@ -1,4 +1,5 @@
 # encapsulation
+from ast import For
 from mimetypes import init
 
 
@@ -86,4 +87,30 @@ for country in(obj_Egy,obj_Ter):
     country.Capital()
     country.Language()
     country.Type()
+
+############################
+class Car:
+    def __init__(self,color,price,model):
+        self.color=color
+        self.price=price
+        self.model=model
+
+    def myCar(self):
+        if(self.model>2018):
+            self.price +=100000
+            print(f"My model {self.model} My Price {self.price}")
+        else:
+            self.price -=100000
+            print(f"My model {self.model} My Price {self.price}")
+
+        
+BMW = Car('Black',1000000,2020)
+Ford = Car('Red' ,2000000,2017)
+print(BMW.color)
+print(BMW.price)
+print(BMW.model)
+
+BMW.myCar()
+Ford.myCar()
+        
 
